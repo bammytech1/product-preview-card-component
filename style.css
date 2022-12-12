@@ -1,0 +1,229 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;  
+}
+body {
+    padding: 1.5em 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: hsl(30, 38%, 92%);
+    height: 100vh;
+}
+@media  screen and (max-width: 1039px) {
+    .product-content {
+        max-width: 550px;
+    }
+}
+@media screen and (min-width: 1040px) {
+    body {
+        padding: 5em 7em;
+        position: relative;
+    }
+    .row {
+        display: flex;
+        width: 1017px;
+    }
+}
+
+.product-content {
+    width: 95%;
+    background: #ffffff;
+    border-radius: 15px 15px 15px 15px;
+}
+@media screen and (min-width: 1040px) {
+    .product-content {
+        max-width: 764px;
+        border-radius: 10px;
+        padding: 0;
+        background: rgba(255, 255, 255, 0.92);
+    }
+}
+
+.product-preview #product-img {
+    width: 100%;
+    height:auto;
+    padding: 0px;
+    margin-bottom: 0;
+    border-radius: 15px 15px 0px 0px;
+}
+@media  screen and (max-width: 1040px) {
+    #product-img2 {
+        display: none;
+    }
+}
+@media  screen and (min-width: 1040px )  {
+    #product-img {
+        display: none;
+    }
+    #product-img2 {
+        width: 382px;
+        height: 503px;
+        position:absolute;
+
+    }
+    .col-1 {
+        width: 50%;
+        height:auto !important;
+    }
+    .col-2 {
+        width: 50%;
+    }
+
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2em 2em;
+    gap: 1em;
+    width: 100%;
+    height: auto;
+}
+@media  screen and (min-width: 1040px ) {
+    .product-details {
+        width: 382px;
+        height: 503px;
+    }
+}
+
+.product-type,
+.product-description,
+.product-discount {
+    color: hsl(228, 12%, 48%)
+}
+.product-amount {
+    color:  hsl(158, 36%, 37%);
+}
+.product-name {
+    color: hsl(212, 21%, 14%);
+}
+.product-type {
+    width: 100%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 18px;
+    letter-spacing: 0.165em;
+}
+@media screen and (min-width: 1040px) {
+    .product-type {
+        font-size: 1.1rem;
+    }
+}
+.product-name {
+width: 90%;
+font-family: 'Fraunces';
+font-style: normal;
+font-weight: 700;
+font-size: 2rem;
+line-height: 38px;
+order: 1;
+}
+@media screen and (min-width: 1040px) {
+    .product-name {
+        font-size: 2.5rem;
+        margin-bottom: 0.3em;
+        margin-top: 0.3em;
+    }
+}
+.product-description {
+    width: 90%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 16px;
+    order: 2;
+}
+@media screen and (min-width: 1040px) {
+    .product-description {
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+    }
+}
+.product-price {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    align-items: center;
+    gap: 13px;
+    order: 3;
+}
+
+.product-amount {
+width: 100%;
+font-family: 'Fraunces';
+font-style: normal;
+font-weight: 700;
+font-size: 2rem;
+line-height: 31px;
+margin: 0px;
+}
+@media screen and (min-width: 1040px) {
+    .product-amount {
+        font-size: 2rem;
+    }
+}
+
+.product-discount {
+    width: 100%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 13px;
+    text-decoration-line: line-through;
+}
+@media screen and (min-width: 1040px) {
+    .product-discount {
+        font-size: 1.1rem;
+    }
+}
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 1.5em;
+    gap: 12px;
+    width: 100%;
+    height: auto;
+    background: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    flex: none;
+    order: 4;
+}
+#add-text {
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+@media screen and (min-width: 1040px) {
+    #add-text {
+        font-size: 1.2rem;
+    }
+}
+#cart-icon {
+    width: 18px;
+}
+a {
+    text-decoration: none;
+}
+a:active {
+    background-color: hsl(143, 100%, 6%);
+}
+
+
+
+
+
