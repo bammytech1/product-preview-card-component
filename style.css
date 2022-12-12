@@ -199,6 +199,7 @@ margin: 0px;
     height: auto;
     background: hsl(158, 36%, 37%);
     border-radius: 10px;
+    border: none;
     flex: none;
     order: 4;
 }
@@ -219,10 +220,10 @@ margin: 0px;
 #cart-icon {
     width: 18px;
 }
-a {
+button {
     text-decoration: none;
 }
-a:active {
+button:active {
     background-color: hsl(143, 100%, 6%);
 }
 
